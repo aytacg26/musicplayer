@@ -4,7 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script src="./js/musicplayer.js" defer></script>
     <title>Music Player</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Music Player</h1>
+    <div class="music-container">
+      <div class="music-info">
+        <h4 id="title">Tears Don't fall</h4>
+        <div class="progress-container">
+          <div class="progress"></div>
+        </div>
+      </div>
+      <audio
+        src="music/Tears Don't Fall - Bullet For My Valentine (Violet Orlandi ft Lauren Babic COVER).mp3"
+        id="audio"
+      ></audio>
+      <div class="img-container">
+        <img
+          src="images/Tears Don't Fall - Bullet For My Valentine (Violet Orlandi ft Lauren Babic COVER).jpg"
+          alt="music cover"
+          id="cover"
+        />
+      </div>
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+          <i class="fas fa-play"></i>
+        </button>
+        <button id="next" class="action-btn">
+          <i class="fas fa-forward"></i>
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
